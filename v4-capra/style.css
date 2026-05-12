@@ -356,7 +356,7 @@ em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--green);fon
   .foot-cols{gap:20px}
 
   /* Mobile nav */
-  .nav{grid-template-columns:1fr auto;padding:14px 20px}
+  .nav{grid-template-columns:1fr auto;padding:14px 20px;backdrop-filter:none}
   .nav-cta .status,.nav-cta .btn-primary{display:none}
   .nav-toggle{display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:transparent;border:1px solid rgba(255,255,255,.2);border-radius:2px;cursor:pointer;padding:0;color:var(--paper)}
   .nav-toggle-bars{position:relative;width:18px;height:14px}
