@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>News — Capra Biosciences</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* NEWS — editorial press list, follows the .jobs vocabulary */
+.press{border-top:1px solid var(--line-strong)}
+.press-row{display:grid;grid-template-columns:120px 200px 1fr auto;gap:24px 32px;align-items:start;padding:28px 0;border-bottom:1px solid var(--line);transition:padding-left .3s ease, background .3s ease}.3s ease}
+.press-row:hover{padding-left:16px;background:var(--green-soft)}
+.press-row:hover h4{color:var(--green-2)}
+.press-row .date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:400;font-variant-numeric:tabular-nums}
+.press-row .outlet{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:400}
+.press-row h4{font-family:'Inter Tight';font-weight:600;font-size:22px;margin:0;letter-spacing:-.01em;line-height:1.2;color:var(--navy);transition:color .2s;max-width:60ch}
+.press-row h4 a{color:inherit}
+.press-row h4 a:hover{color:var(--green-2)}
+.press-row .read{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.press-row .read .arrow{transition:transform .2s}
+.press-row:hover .read{color:var(--green-2)}
+.press-row:hover .read .arrow{transform:translateX(4px)}
+
+/* Featured story (top of feed) */
+.press-feature{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;padding:0 0 64px;margin-bottom:32px;border-bottom:1px solid var(--line-strong);align-items:end}
+.press-feature .meta{display:flex;flex-direction:column;gap:14px}
+.press-feature .meta .row{display:flex;gap:16px;align-items:center}
+.press-feature h3{font-family:'Inter Tight';font-weight:600;font-size:clamp(32px,3.4vw,52px);line-height:1.02;letter-spacing:-.025em;color:var(--navy);margin:0 0 24px;max-width:22ch}
+.press-feature h3 em{color:var(--green);font-family:'Instrument Serif',serif;font-weight:400}
+.press-feature h3 a{color:inherit}
+.press-feature h3 a:hover{color:var(--green-2)}
+.press-feature .feat-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.press-feature .lead{font-size:17px;line-height:1.55;color:var(--mute);margin:0 0 24px;max-width:52ch}
+
+/* Filters */
+.press-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px}
+.press-filters button{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);background:transparent;border:1px solid var(--line);padding:10px 14px;cursor:pointer;border-radius:2px;transition:all .2s}
+.press-filters button:hover{border-color:var(--green);color:var(--green-2)}
+.press-filters button.active{background:var(--navy);border-color:var(--navy);color:var(--paper)}
+.press-row.is-hidden{display:none}
+
+@media (max-width: 1024px){
+  .press-row{grid-template-columns:1fr;gap:6px;padding:20px 0}
+  .press-feature{grid-template-columns:1fr;gap:32px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="home.html"><img class="brand-mark" src="img/logo-mark.webp" alt="Capra Biosciences"/><span class="wordmark">Capra</span></a>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="platform.html">Platform</a>
+    <a href="team.html">About</a>
+    <a href="news.html" class="active">News</a>
+    <a href="careers.html">Careers</a>
+  </div>
+  <div class="nav-cta">
+    <a class="btn-primary" href="mailto:info@caprabiosciences.com">Contact <span class="arrow">→</span></a>
+  </div>
+</nav>
+
+<section class="hero subhero">
+  <div class="hero-inner">
+    <div class="hero-meta">
+      <span class="mono">Press</span>
+      <span class="mono">Coverage · Announcements</span>
+      <span class="mono">2022 — 2024</span>
+    </div>
+    <h1 class="display" style="margin-bottom:24px">In the <em>press.</em></h1>
+    <p class="sub" style="max-width:64ch">Selected coverage of Capra and the team — from federal awards and funding rounds to features on the platform and the broader bioeconomy.</p>
+  </div>
+</section>
+
+<section class="section">
+  <header class="sec-head">
+    <span class="eyebrow">Featured</span>
+    <h2 class="h-display">Recent <em>highlights.</em></h2>
+  </header>
+
+  <!-- FEATURED -->
+  <article class="press-feature">
+    <div class="meta">
+      <div class="row">
+        <span class="mono" style="color:var(--green) !important">BioMADE</span>
+        <span class="mono">April 29, 2026</span>
+      </div>
+      <span class="mono">Federal · BioMADE</span>
+    </div>
+    <div>
+      <h3><a href="https://www.biomade.org/news/biomade-announces-214-million-invested-in-14-projects" target="_blank" rel="noopener">BioMADE Announces <em>$21.4M</em> Invested in 14 Projects to Develop U.S. Bioindustrial Manufacturing</a></h3>
+      <p class="lead">Capra is part of BioMADE's newest project portfolio — partnering with Boston University on free-floating microbial-electronic sensors that generate a new datastream for AI- and ML-driven fermentation optimization.</p>
+      <div class="feat-actions">
+        <a class="btn-accent" href="https://www.biomade.org/news/biomade-announces-214-million-invested-in-14-projects" target="_blank" rel="noopener">Read on BioMADE <span class="arrow">→</span></a>
+        <a class="btn-line" style="border-color:var(--line-strong);color:var(--navy)" href="#archive">See all coverage</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- FILTERS -->
+  <div class="press-filters" id="filters" role="tablist" aria-label="Filter news by topic">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="federal">Federal &amp; awards</button>
+    <button data-filter="funding">Funding</button>
+    <button data-filter="platform">Platform &amp; science</button>
+    <button data-filter="policy">Policy</button>
+  </div>
+
+  <!-- ARCHIVE LIST -->
+  <div class="press" id="archive">
+
+    <a class="press-row" data-tag="federal" href="https://www.biomade.org/news/biomade-announces-214-million-invested-in-14-projects" target="_blank" rel="noopener">
+      <span class="date">Apr 29, 2026</span>
+      <span class="outlet">BioMADE</span>
+      <h4>BioMADE Announces $21.4M Invested in 14 Projects to Develop the U.S. Bioindustrial Manufacturing Industry</h4>
+      <span class="read">Read announcement <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="policy" href="https://www.biospace.com/policy/us-manufacturing-unprepared-for-biosecure-acts-repercussions" target="_blank" rel="noopener">
+      <span class="date">Aug 21, 2024</span>
+      <span class="outlet">BioSpace</span>
+      <h4>U.S. Manufacturing Unprepared for BIOSECURE Act's Repercussions</h4>
+      <span class="read">Read article <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="federal" href="https://www.bizjournals.com/washington/inno/stories/news/2024/07/22/capra-biosciences-biomap-pharmaceuticals.html" target="_blank" rel="noopener">
+      <span class="date">Jul 22, 2024</span>
+      <span class="outlet">Washington Business Journal</span>
+      <h4>Capra Biosciences Joins BioMAP Consortium to Scale Pharmaceutical Manufacturing</h4>
+      <span class="read">Read article <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="federal" href="press/biomap-7-5m-award.html">
+      <span class="date">Jul 19, 2024</span>
+      <span class="outlet">Announcement</span>
+      <h4>Capra Lands $7.5M Project Agreement to Demonstrate Platform for Rapidly Scaling Pharmaceutical Ingredient Manufacturing</h4>
+      <span class="read">Read announcement <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="federal" href="https://www.genengnews.com/topics/bioprocessing/capra-biosciences-wins-7-5-million-award-to-scale-and-manufacture-bio-derived-small-molecule-apis/" target="_blank" rel="noopener">
+      <span class="date">Jul 19, 2024</span>
+      <span class="outlet">Genetic Engineering &amp; Biotechnology News</span>
+      <h4>Capra Biosciences Wins $7.5M Award to Scale and Manufacture Bio-Derived Small-Molecule APIs</h4>
+      <span class="read">Read article <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="federal" href="https://www.biomap-consortium.org/project-detail/production-of-biologically-derived-small-molecule-regulatory-starting-materials-and-or-active-pharmaceutical-ingredients-at-commercial-scale/" target="_blank" rel="noopener">
+      <span class="date">Jul 12, 2024</span>
+      <span class="outlet">BioMaP Consortium</span>
+      <h4>CoMPASS: Continuous Biomanufacturing Process Analysis for Scaling API Synthesis</h4>
+      <span class="read">Project page <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="funding" href="https://www.closedlooppartners.com/how-microbes-are-changing-manufacturing-why-we-invested-in-capra-biosciences/" target="_blank" rel="noopener">
+      <span class="date">May 8, 2024</span>
+      <span class="outlet">Closed Loop Partners</span>
+      <h4>How Microbes Are Changing Manufacturing — Why We Invested in Capra Biosciences</h4>
+      <span class="read">Read article <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="platform" href="https://www.synbiobeta.com/read/harnessing-biofilms-for-biomanufacturing-and-as-living-materials" target="_blank" rel="noopener">
+      <span class="date">Apr 30, 2024</span>
+      <span class="outlet">SynBioBeta</span>
+      <h4>Harnessing Biofilms for Biomanufacturing and as Living Materials</h4>
+      <span class="read">Read article <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="platform" href="https://www.growbyginkgo.com/2023/07/11/reimagining-the-bioreactor/" target="_blank" rel="noopener">
+      <span class="date">Jul 11, 2023</span>
+      <span class="outlet">Grow by Ginkgo</span>
+      <h4>Reimagining the Bioreactor</h4>
+      <span class="read">Read feature <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="funding" href="https://www.businesswire.com/news/home/20220606005813/en/Capra-Biosciences-Raises-1.8M-in-Pre-Seed-Round-for-Renewable-Chemical-Innovations" target="_blank" rel="noopener">
+      <span class="date">Jun 6, 2022</span>
+      <span class="outlet">BusinessWire</span>
+      <h4>Capra Biosciences Raises $1.8M in Pre-Seed Round for Renewable Chemical Innovations</h4>
+      <span class="read">Read release <span class="arrow">→</span></span>
+    </a>
+
+    <a class="press-row" data-tag="funding" href="https://www.bizjournals.com/washington/news/2022/06/01/capra-biosciences-funding-bioreactor-tech.html" target="_blank" rel="noopener">
+      <span class="date">Jun 1, 2022</span>
+      <span class="outlet">Washington Business Journal</span>
+      <h4>Capra Biosciences Pulls in Funding for Novel Bioreactor Tech</h4>
+      <span class="read">Read article <span class="arrow">→</span></span>
+    </a>
+
+  </div>
+</section>
+
+<section class="section-cta">
+  <div class="cta-inner">
+    <span class="eyebrow">Stay in touch</span>
+    <h2 class="h-display">Working on a story <em>about Capra?</em></h2>
+    <p class="cta-sub">We're happy to talk about the platform, the Sterling facility, or the broader push to rebuild domestic chemical manufacturing. Reach out and we'll route you to the right co-founder.</p>
+    <div class="cta-actions">
+      <a class="btn-accent" href="mailto:info@caprabiosciences.com">info@caprabiosciences.com <span class="arrow">→</span></a>
+      <a class="btn-line-light" href="team.html">Meet the team</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div>
+    <div class="logo"><img class="brand-logo" src="img/capra-logo-light.png" alt="Capra Biosciences"/></div>
+    <span class="mono">101 International Drive, STE 100<br/>Sterling, VA 20166</span><br/><br/>
+    <span class="mono" style="color:var(--mute-2)">© 2026 Capra Biosciences</span>
+  </div>
+  <div class="foot-cols">
+    <div><span class="mono">Site</span><a href="home.html">Home</a><a href="products.html">Products</a><a href="team.html">About</a><a href="news.html">News</a><a href="careers.html">Careers</a></div>
+    <div><span class="mono">Contact</span><a href="mailto:info@caprabiosciences.com">info@caprabiosciences.com</a><a href="mailto:bd@caprabiosciences.com">bd@caprabiosciences.com</a><a href="mailto:hr@caprabiosciences.com">hr@caprabiosciences.com</a></div>
+  </div>
+</footer>
+
+<script>
+// Filter chips
+(function(){
+  const buttons = document.querySelectorAll('#filters button');
+  const rows = document.querySelectorAll('.press-row');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    const f = b.dataset.filter;
+    rows.forEach(r => {
+      const match = (f === 'all') || (r.dataset.tag === f);
+      r.classList.toggle('is-hidden', !match);
+    });
+  }));
+})();
+
+// Reveal on scroll
+const targets = document.querySelectorAll('.hero, .section, .marquee');
+targets.forEach(el=>el.classList.add('fade-init'));
+const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+targets.forEach(el=>io.observe(el));
+setTimeout(()=>{ targets.forEach(el=>el.classList.add('in')); }, 1800);
+</script>
+</body>
+</html>
